@@ -1,13 +1,6 @@
----
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: default
-title: Multiple Parson's Problems on One Page
----
 # Parsons Practice
 
-## Parsons 1 (Line Based Grader)
+## Parsons 1
 Re-arrange the blocks below so they print out "Hello World!"
 
 <div id="one-sortableTrash" class="sortable-code"></div> 
