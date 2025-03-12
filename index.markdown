@@ -154,6 +154,8 @@ A 2D array that simulates desks in an exam hall is defined as `desks` of type `S
 })(); 
 </script>
 
+<p>Bonus: write a more efficient version by yourself which stops looping once a student code has been found. </p>
+
 <p hidden>
 public ArrayList<String> findAbsentees(Student[][] desks, String[] codes) {
    ArrayList<String> missing = new ArrayList<>();
@@ -174,4 +176,81 @@ public ArrayList<String> findAbsentees(Student[][] desks, String[] codes) {
 }
 </p>
 
-Bonus: write a more efficient version by yourself which stops looping once a student code has been found. 
+<h2>3. Remove finished Books from list</h2>
+
+The Book class is defined as:
+
+```
+class Book {
+  private String title;
+  private boolean finished;
+
+  /* constructor not shown */
+  public String getTitle() { return title; }
+  public boolean isFinished() { return finished; }
+  public void setFinished(boolean finished) { this.finished = finished; }
+}
+```
+
+An array of type `String[]` defined as `completed` provides several book titles that have been finished. The `books` list is an `ArrayList<Book>` object that stores several book objects. The task is to define a method that will iterate through `books` and do the following:
+
+* set `finished` to `true` for all books that are found in `completed`.
+* remove all books that are finished, including both those which were just updated due to the previous requirement, and which were already marked as finished.
+* return an `ArrayList<Book>` that contains references to all books which were removed. 
+
+Rearrange the blocks to complete the method. *Hint: loop through the book titles on the outermost loop*
+
+<div id="arrayList-finishedBooks-sortableTrash" class="sortable-code"></div> 
+<div id="arrayList-finishedBooks-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="arrayList-finishedBooks-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="arrayList-finishedBooks-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "public ArrayList&lt;Book&gt; removeFinished(String[] finished, ArrayList&lt;Book&gt; books) {\n" +
+    "   ArrayList&lt;Book&gt; removed = new ArrayList&lt;&gt;();\n" +
+    "   for (String bookTitle : finished) {\n" +
+    "      for (int i = 0; i &lt; books.size(); i++) {\n" +
+    "         if (bookTitle.equals(books.get(i).getTitle())) {\n" +
+    "            books.get(i).setFinished(true);\n" +
+    "         }\n" +
+    "         if (books.get(i).isFinished()) {\n" +
+    "            removed.add(books.remove(i));\n" +
+    "            i--;\n" +
+    "         }\n" +
+    "      }\n" +
+    "   }\n" +
+    "   return removed;\n" +
+    "}\n" +
+    "for (int i = 0; i &lt; books.length; i++) { #distractor\n" +
+    "if (bookTitle == books.get(i).getTitle())) { #distractor\n" +
+    "if (bookTitle == books.get(i)) { #distractor\n" +
+    "i++; #distractor\n" +
+    "removed.add(books.get(i)); #distractor\n" +
+    "return books.get(i); #distractor";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "arrayList-finishedBooks-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "trashId": "arrayList-finishedBooks-sortableTrash"
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#arrayList-finishedBooks-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#arrayList-finishedBooks-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
