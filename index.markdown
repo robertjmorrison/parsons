@@ -62,7 +62,8 @@
 
 Bonus: write a method by yourself that counts the number of increasing columns. 
 
-<p hidden>public int countDecreasing(int[][] grid) {
+<!--
+public int countDecreasing(int[][] grid) {
   int decCount = 0;
   for (int row = 0; row < grid.length; row++) {
      boolean isDecreasing = true;
@@ -77,7 +78,7 @@ Bonus: write a method by yourself that counts the number of increasing columns.
   }
   return decCount;
 }
-</p>
+-->
 
 <h2>2. Exam Attendance</h2>
 
