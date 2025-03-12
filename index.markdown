@@ -157,23 +157,7 @@ A 2D array that simulates desks in an exam hall is defined as `desks` of type `S
 <p>Bonus: write a more efficient version by yourself which stops looping once a student code has been found. </p>
 
 <p hidden>
-public ArrayList<String> findAbsentees(Student[][] desks, String[] codes) {
-   ArrayList<String> missing = new ArrayList<>();
-   for (String code : codes) {
-      boolean found = false;
-      for (Student[] row : desks) {
-         for (Student student : row) {
-            if (student != null && student.getExamRegCode().equals(code)) {
-               found = true;
-            }
-         }
-      }
-      if (!found) {
-         missing.add(code);
-      }
-   }
-   return missing;
-}
+
 </p>
 
 <h2>3. Remove finished Books from list</h2>
