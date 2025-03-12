@@ -1,4 +1,4 @@
-<h1>2D Array Problems</h1>
+<h1>2D Array & ArrayList Problems</h1>
 
 <p>Some or all of the below problems will involve distractor blocks, meaning there are some blocks that will not be used. Press the <em>Get Feedback</em> button below the blocks to check if your answer is correct, or use <em>Reset Problem</em> to delete your work. Please drag so that standard indentation is followed. Where the sequence of two blocks </p>
 
