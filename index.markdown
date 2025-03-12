@@ -95,6 +95,8 @@ class Student {
 
 A 2D array that simulates desks in an exam hall is defined as `desks` of type `Student[][]`. A 1D array of exam registration codes defined as `codes` represents the expected attendance list. A method is required to search `desks` for each of the students whose exam registration codes are contained in `codes`, and return an `ArrayList<String>` containing the codes of students who are expected to be present but are not in the examination hall. Note that not all desks are occupied, and this is represented by a `null` value. Re-arrange the blocks to define this method. 
 
+<em>Hint: </em> loop through the codes on the outermost loop. 
+
 <div id="2dArr-absentStudents-sortableTrash" class="sortable-code"></div> 
 <div id="2dArr-absentStudents-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
