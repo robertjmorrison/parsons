@@ -1,9 +1,9 @@
 <h1>2D Array Problems</h1>
 
-<p>Some or all of the below problems will involve distractor blocks, meaning there are some blocks that will not be used. Press the <em>Get Feedback</em> button below the blocks to check if your answer is correct, or use <em>Reset Problem</em> to delete your work. Please drag so that standard indentation is followed. </p>
+<p>Some or all of the below problems will involve distractor blocks, meaning there are some blocks that will not be used. Press the <em>Get Feedback</em> button below the blocks to check if your answer is correct, or use <em>Reset Problem</em> to delete your work. Please drag so that standard indentation is followed. Where the sequence of two blocks </p>
 
-<h2> 1. Count Descending Rows</h2>
-<p>A row is in descending order if each value is less than or equal to its predecessor. For example, the rows <code>[7, 6, 6, 2]</code> and <code>[4, 3, 2, 1]</code> are in decreasing order, but <code>[5, 8, 9, 0]</code> is not. Re-arrange the blocks to create a method that counts and returns the number of decreasing rows in a 2D array `grid`. </p>
+<h2> 1. Count Decreasing Rows</h2>
+<p>A row is in decreasing order if each value is less than or equal to its predecessor. For example, the rows <code>[7, 6, 6, 2]</code> and <code>[4, 3, 2, 1]</code> are in decreasing order, but <code>[5, 8, 9, 0]</code> is not. Re-arrange the blocks to create a method that counts and returns the number of decreasing rows in a 2D array <code>grid</code>. </p>
 
 <div id="2dArr-countDecreasing-sortableTrash" class="sortable-code"></div> 
 <div id="2dArr-countDecreasing-sortable" class="sortable-code"></div> 
@@ -31,8 +31,9 @@
     "}\n" +
     "return isDecreasing; #distractor\n" +
     "if (!isDecreasing) { #distractor\n" +
-    "int col = 0; col &lt; grid[0].length; col++ #distractor\n" +
-    "int col = 1; col &lt; grid.length; col++ #distractor";
+    "for (int col = 0; col &lt; grid[0].length; col++) {} #distractor\n" +
+    "for (int col = 1; col &lt; grid.length; col++) {} #distractor\n" +
+    "return false;";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "2dArr-countDecreasing-sortable",
     "max_wrong_lines": 10,
@@ -57,4 +58,5 @@
 })(); 
 </script>
 
+<h2>2. 
 
