@@ -111,7 +111,7 @@ A 2D array that simulates desks in an exam hall is defined as `desks` of type `S
 (function(){
   var initial = "public ArrayList&lt;String&gt; findAbsentees(Student[][] desks, String[] codes) {\n" +
     "   ArrayList&lt;String&gt; missing = new ArrayList&lt;&gt;();\n" +
-    "   for (String code : codes) {\n" +
+    "   for (String code : codes) { // OUTER LOOP \n" +
     "      boolean found = false;\n" +
     "      for (Student[] row : desks) {\n" +
     "         for (Student student : row) {\n" +
@@ -198,7 +198,7 @@ Rearrange the blocks to complete the method. *Hint: loop through the book titles
 (function(){
   var initial = "public ArrayList&lt;Book&gt; removeFinished(String[] finished, ArrayList&lt;Book&gt; books) {\n" +
     "   ArrayList&lt;Book&gt; removed = new ArrayList&lt;&gt;();\n" +
-    "   for (String bookTitle : finished) {\n" +
+    "   for (String bookTitle : finished) { // OUTER LOOP\n" +
     "      for (int i = 0; i &lt; books.size(); i++) {\n" +
     "         if (bookTitle.equals(books.get(i).getTitle())) {\n" +
     "            books.get(i).setFinished(true);\n" +
