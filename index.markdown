@@ -77,7 +77,7 @@ Bonus: write a method by yourself that counts the number of increasing columns.
 }
 </p>
 
-<h2>2. Exam Attendnace</h2>
+<h2>2. Exam Attendance</h2>
 
 The Student class is defined as follows:
 
