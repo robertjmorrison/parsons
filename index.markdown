@@ -1,8 +1,8 @@
 <h1>2D Array & ArrayList Problems</h1>
 
-<p>Some or all of the below problems will involve distractor blocks, meaning there are some blocks that will not be used. Press the <em>Get Feedback</em> button below the blocks to check if your answer is correct, or use <em>Reset Problem</em> to delete your work. Please drag so that standard indentation is followed. Where the sequence of two blocks </p>
+<p>Some or all of the below problems will involve distractor blocks, meaning there are some blocks that will not be used. Press the <em>Get Feedback</em> button below the blocks to check if your answer is correct, or use <em>Reset Problem</em> to delete your work. Please drag so that standard indentation is followed. These problems have been designed so that there is only one possible solution, but it's possible there is something I have overlooked. <br><br>
 
-<div class = "callout">If you want more practice, please go to CSAwesome sections 8.4, 8.5 & 8.6 for 2D arrays; sections 7.10, 7.11 & 7.12 for ArrayList. </div>
+<em>If you want more practice, please go to CSAwesome sections 8.4, 8.5 & 8.6 for 2D arrays; sections 7.10, 7.11 & 7.12 for ArrayList. </em></p>
 
 <h2> 1. Count Decreasing Rows</h2>
 <p>A row is in decreasing order if each value is less than or equal to its predecessor. For example, the rows <code>[7, 6, 6, 2]</code> and <code>[4, 3, 2, 1]</code> are in decreasing order, but <code>[5, 8, 9, 0]</code> is not. Re-arrange the blocks to create a method that counts and returns the number of decreasing rows in a 2D array <code>grid</code>. </p>
