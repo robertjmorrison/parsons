@@ -1,7 +1,7 @@
-# Parsons Practice
+# 2D Array Problems
 
-## Parsons 1
-Re-arrange the blocks below so they print out "Hello World!"
+## 1. Count Descending Rows
+A row is in descending order if each value is less than or equal to its predecessor. For example, the rows `[7, 6, 6, 2]` and `[4, 3, 2, 1]` are in decreasing order, but `[5, 8, 9, 0]` is not. Re-arrange the blocks to create a method that counts and returns the number of decreasing rows in a 2D array `grid`. **Some blocks will not be used**.
 
 <div id="one-sortableTrash" class="sortable-code"></div> 
 <div id="one-sortable" class="sortable-code"></div> 
@@ -52,13 +52,5 @@ Re-arrange the blocks below so they print out "Hello World!"
   }); 
 })(); 
 </script>
-</script>
 
-### Implementation Notes
 
-When you host multiple Parson's problems on a single markdown page, you need to add a unique prefix. You can easily do this in the Codio generator by typing a unique prefix into the "Prefix" textbox and pressing Enter/Return. Then you can simply copy-paste like normal.
-
-If want each problem to be it's own page, you can use relative path links at the bottom of each of your markdown pages as seen below. If you want students to be able to return to previous problems in this format, consider adding previous links or link to a table of contents like page.
-
-### Example Next Link
-[Next](./parsons/example1.html)
