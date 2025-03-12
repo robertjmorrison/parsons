@@ -178,10 +178,10 @@ class Book {
 }
 ```
 
-An array of type `String[]` defined as `completed` provides several book titles that have been finished. The `books` list is an `ArrayList<Book>` object that stores several book objects. The task is to define a method that will iterate through `books` and do the following:
+An array of type `String[]` defined as `finished` provides several book titles that have been finished. The `books` list is an `ArrayList<Book>` object that stores several book objects. The task is to define a method that will iterate through `books` and do the following:
 
-* set `finished` to `true` for all books that are found in `completed`.
-* remove all books that are finished, including both those which were just updated due to the previous requirement, and which were already marked as finished.
+* set `finished` to `true` for all books that are found in `finished`.
+* remove all books from `books` that are finished, including both those which were just updated due to the previous requirement, and which were already marked as finished.
 * return an `ArrayList<Book>` that contains references to all books which were removed. 
 
 Rearrange the blocks to complete the method. *Hint: loop through the book titles on the outermost loop*
