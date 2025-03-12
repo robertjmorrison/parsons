@@ -1,6 +1,6 @@
 <h1>2D Array & ArrayList Problems</h1>
 
-<p>Some or all of the below problems will involve distractor blocks, meaning there are some blocks that will not be used. Press the <em>Get Feedback</em> button below the blocks to check if your answer is correct, or use <em>Reset Problem</em> to delete your work. Please drag so that standard indentation is followed. These problems have been designed so that there is only one possible solution, but it's possible there is something I have overlooked. <br><br>
+<p>Some or all of the below problems will involve distractor blocks, meaning there are some blocks that will not be used. Press the <em>Get Feedback</em> button below the blocks to check if your answer is correct, or use <em>Reset Problem</em> to delete your work. Please drag so that standard indentation is followed. <br><br>
 
 <em>If you want more practice, please go to CSAwesome sections 8.4, 8.5 & 8.6 for 2D arrays; sections 7.10, 7.11 & 7.12 for ArrayList. </em></p>
 
