@@ -33,7 +33,7 @@
     "if (!isDecreasing) { #distractor\n" +
     "for (int col = 0; col &lt; grid[0].length; col++) {} #distractor\n" +
     "for (int col = 1; col &lt; grid.length; col++) {} #distractor\n" +
-    "return false;";
+    "return false; #distractor";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "2dArr-countDecreasing-sortable",
     "max_wrong_lines": 10,
