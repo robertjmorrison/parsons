@@ -1,7 +1,9 @@
 # 2D Array Problems
 
+Some or all of the below problems will involve distractor blocks, meaning there are some blocks that will not be used. Press the **Get Feedback** button below the blocks to check if your answer is correct, or use **Reset Problem** to delete your work. Please drag so that standard indentation is followed. 
+
 ## 1. Count Descending Rows
-A row is in descending order if each value is less than or equal to its predecessor. For example, the rows `[7, 6, 6, 2]` and `[4, 3, 2, 1]` are in decreasing order, but `[5, 8, 9, 0]` is not. Re-arrange the blocks to create a method that counts and returns the number of decreasing rows in a 2D array `grid`. **Some blocks will not be used**.
+A row is in descending order if each value is less than or equal to its predecessor. For example, the rows `[7, 6, 6, 2]` and `[4, 3, 2, 1]` are in decreasing order, but `[5, 8, 9, 0]` is not. Re-arrange the blocks to create a method that counts and returns the number of decreasing rows in a 2D array `grid`. 
 
 <div id="one-sortableTrash" class="sortable-code"></div> 
 <div id="one-sortable" class="sortable-code"></div> 
