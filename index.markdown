@@ -58,5 +58,118 @@
 })(); 
 </script>
 
-<h2>2. 
+Bonus: write a method by yourself that counts the number of increasing columns. 
 
+<p hidden>public int countDecreasing(int[][] grid) {
+  int decCount = 0;
+  for (int row = 0; row < grid.length; row++) {
+     boolean isDecreasing = true;
+     for (int col = 1; col < grid[0].length; col++) {
+        if (grid[row][col] > grid[row][col - 1]) {
+           isDecreasing = false;
+        }
+     }
+     if (isDecreasing) {
+        decCount++;
+     }
+  }
+  return decCount;
+}
+</p>
+
+<h2>2. Exam Attendnace</h2>
+
+The Student class is defined as follows:
+
+```
+class Student {
+  private String fullName;
+  private String examRegCode;
+
+  /* constructor not shown */
+
+  public String getFullName() { return fullName; }
+  public String getExamRegCode() { return examRegCode; }
+}
+```
+
+A 2D array that simulates desks in an exam hall is defined as `desks` of type `Student[][]`. A 1D array of exam registration codes defined as `codes` represents the expected attendance list. A method is required to search `desks` for each of the students whose exam registration codes are contained in `codes`, and return an `ArrayList<String>` containing the codes of students who are expected to be present but are not in the examination hall. Note that not all desks are occupied, and this is represented by a `null` value. Re-arrange the blocks to define this method. 
+
+<div id="2dArr-absentStudents-sortableTrash" class="sortable-code"></div> 
+<div id="2dArr-absentStudents-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="2dArr-absentStudents-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="2dArr-absentStudents-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "public ArrayList&lt;String&gt; findAbsentees(Student[][] desks, String[] codes) {\n" +
+    "   ArrayList&lt;String&gt; missing = new ArrayList&lt;&gt;();\n" +
+    "   for (String code : codes) {\n" +
+    "      boolean found = false;\n" +
+    "      for (Student[] row : desks) {\n" +
+    "         for (Student student : row) {\n" +
+    "            if (student != null &amp;&amp; student.getExamRegCode().equals(code)) {\n" +
+    "               found = true;\n" +
+    "            }\n" +
+    "         }\n" +
+    "      }\n" +
+    "      if (!found) {\n" +
+    "         missing.add(code);\n" +
+    "      }\n" +
+    "   }\n" +
+    "   return missing;\n" +
+    "}\n" +
+    "for (Student row : desks) { #distractor\n" +
+    "if (student.getExamRegCode().equals(code)) { #distractor\n" +
+    "if (student.getExamRegCode().equals(code) &amp;&amp; student != null) { #distractor\n" +
+    "return code; #distractor\n" +
+    "if (found) { #distractor\n" +
+    "missing.set(code); #distractor\n" +
+    "public void findAbsentees(Student[][] desks, String[] codes) { #distractor";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "2dArr-absentStudents-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "trashId": "2dArr-absentStudents-sortableTrash"
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#2dArr-absentStudents-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#2dArr-absentStudents-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+<p hidden>
+public ArrayList<String> findAbsentees(Student[][] desks, String[] codes) {
+   ArrayList<String> missing = new ArrayList<>();
+   for (String code : codes) {
+      boolean found = false;
+      for (Student[] row : desks) {
+         for (Student student : row) {
+            if (student != null && student.getExamRegCode().equals(code)) {
+               found = true;
+            }
+         }
+      }
+      if (!found) {
+         missing.add(code);
+      }
+   }
+   return missing;
+}
+</p>
+
+Bonus: write a more efficient version by yourself which stops looping once a student code has been found. 
